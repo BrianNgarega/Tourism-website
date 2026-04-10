@@ -42,13 +42,13 @@
         <h2 class="section-heading">About Us</h2>
         <div class="about-container">
             <div class="about-content">
-                <p>Welcome to our tourism company, where adventure meets comfort and unforgettable experiences begin.<br>
-                We are passionate about showcasing the beauty, culture, and diversity of Kenya to travelers from all over the world.</p>
-                <p>Our team is dedicated to providing personalized travel experiences that suit every traveler's needs — whether you are seeking thrilling safaris, relaxing beach holidays, or cultural city tours.<br>
-                We carefully design each journey to ensure comfort, safety, and memorable moments at every destination.</p>
-                <p>With a strong commitment to quality service, professional tour guides, and reliable transport, we aim to make your travel experience seamless and enjoyable.<br>
+                <p>Welcome to our tourism company, where adventure meets comfort and <br>unforgettable experiences begin.<br>
+                We are passionate about showcasing the beauty, culture, and diversity of <br> Kenya to travelers from all over the world.</p>
+                <p>Our team is dedicated to providing personalized travel experiences that suit <br> every traveler's needs — whether you are seeking thrilling safaris, relaxing <br>beach holidays, or cultural city tours.<br>
+                We carefully design each journey to ensure comfort, safety, and memorable  <br>moments at every destination.</p>
+                <p>With a strong commitment to quality service, professional tour guides, and <br>reliable transport, we aim to make your travel experience seamless and <br> enjoyable.<br>
                 From the moment you book with us to the end of your journey, your satisfaction is our top priority.</p>
-                <p>Discover new places, meet new people, and create lasting memories with us. Let us turn your travel dreams into reality.</p>
+                <p>Discover new places, meet new people, and create lasting memories with us. Let usb <br>turn your travel dreams into reality.</p>
             </div>
         </div>
     </section>
@@ -74,24 +74,24 @@
     </section>
 
     <section id="contact">
-        <h2 class="header">Why Choose Us</h2>
+        <h2 class=" contact-header">Why Choose Us</h2>
         <div class="choice-container">
             <div class="choice-content">
                 <h3>Affordable Prices</h3>
-                <p>We offer competitive packages that suit every budget and value making unforgettable experiences accessible to every traveller.</p>
+                <p>We offer competitive packages that suit every budget and value <br> making unforgettable experiences accessible to every traveller.</p>
                 <h3>Expert Local Guides</h3>
-                <p>Experience destinations through the eyes of knowledgeable and welcoming guides who bring culture and stories to life.</p>
+                <p>Experience destinations through the eyes of knowledgeable and <br> welcoming guides who bring culture and stories to life.</p>
                 <h3>Reliable Transport</h3>
-                <p>Travel with ease through our well-organized and reliable transport designed for convenience and relaxation.</p>
+                <p>Travel with ease through our well-organized and reliable transport <br> designed for convenience and relaxation.</p>
                 <h3>Safety First</h3>
-                <p>Your well-being is our top priority. We partner with trusted guides and maintain high safety standards throughout every trip.</p>
+                <p>Your well-being is our top priority. We partner with trusted guides  <br>and maintain high safety standards throughout every trip.</p>
             </div>
         </div>
 
         <h2 class="experience-header">Our Experience</h2>
         <div class="experience-container">
             <div class="experience-content">
-                <p>With 5 years of trusted service, we have built a reputation for delivering reliable, high-quality travel experiences. Our satisfied customers and proven track record reflect our commitment to excellence and customer satisfaction.</p>
+                <p>With 5 years of trusted service, we have built a reputation for  delivering <br> reliable, high-quality travel experiences. Our satisfied customers and  <br>proven track record reflect our commitment to excellence and <br> customer satisfaction.</p>
             </div>
         </div>
 
@@ -107,6 +107,77 @@
             </div>
         </div>
     </section>
+
+  <section id="reviews">
+    <h2 class="reviews-header">Customer Reviews</h2>
+
+    <input type="checkbox" id="review-toggle" class="review-toggle-input">
+    <div class="reviews-container">
+
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"An unforgettable experience! The safari was breathtaking, and the guides were incredibly knowledgeable. Highly recommend Fit Travel!"</p>
+            <span class="reviewer-name">— Sarah M.</span>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"Fit Travel made our trip to Kenya seamless and enjoyable. From booking to the actual tour, everything was well-organized and exceeded our expectations."</p>
+            <span class="reviewer-name">— John D.</span>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★☆</div>
+            <p>"The cultural tour was a highlight of our trip. We got to experience the rich culture of Kenya in a way that felt authentic and respectful. Thank you, Fit Travel!"</p>
+            <span class="reviewer-name">— Emily R.</span>
+        </div>
+
+    </div>
+ 
+    <div class="add-review-wrap">
+        <label for="review-toggle" class="add-review-btn">+ Add Your Review</label>
+    </div>
+
+    <div class="review-form-box">
+        <form class="review-form" action="#" method="post">
+            <h3 class="form-title">Leave a Review</h3>
+
+            <div class="star-rating">
+                <p class="rating-label">Your Rating:</p>
+                <div class="stars-input">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5">★</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">★</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">★</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">★</label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">★</label>
+                </div>
+            </div>
+
+            <div class="review-fields">
+                <div class="review-field">
+                    <label for="reviewer-name-input">Your Name</label>
+                    <input type="text" id="reviewer-name-input" name="reviewer-name" placeholder="e.g. Jane W." required>
+                </div>
+                <div class="review-field full">
+                    <label for="review-text">Your Review</label>
+                    <textarea id="review-text" name="review-text" placeholder="Tell us about your experience..." required></textarea>
+                </div>
+            </div>
+
+            <div class="review-form-actions">
+                <label for="review-toggle" class="cancel-btn">Cancel</label>
+                <button type="submit" class="submit-review-btn">Submit Review</button>
+            </div>
+
+        </form>
+    </div>
+
+</section>
 
     <footer id="footer">
         <div class="footer-inner">

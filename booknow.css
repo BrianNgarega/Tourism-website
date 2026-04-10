@@ -12,7 +12,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-color: rgba(237, 237, 237, 0.6);
+    background-color: rgba(239, 220, 220, 0.6);
     background-blend-mode: multiply;
     display: flex;
     justify-content: center;
@@ -50,7 +50,7 @@ body {
 .logo-text {
     font-size: 22px;
     font-weight: 700;
-    color: #daf014;
+    color: #000000;
     letter-spacing: 2px;
     text-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
@@ -65,12 +65,12 @@ body {
 
 .page-subtitle {
     font-size: 15px;
-    color: rgba(255,255,255,0.75);
+    color: rgba(255, 255, 255, 0.75);
     font-weight: 400;
 }
 
 .booking-card {
-    background: rgba(75, 59, 53, 0.82);
+    background: rgba(155, 115, 100, 0.08);
     border-radius: 20px;
     padding: 40px 36px;
     box-shadow: 0 20px 60px rgba(0,0,0,0.55);
@@ -139,7 +139,7 @@ input[type="date"],
 input[type="number"],
 textarea {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.07);
+    background-color: rgba(62, 40, 40, 0.07);
     border: 1px solid rgba(218, 240, 20, 0.2);
     padding: 10px 14px;
     border-radius: 8px;

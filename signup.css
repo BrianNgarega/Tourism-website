@@ -3,19 +3,43 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+      background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.4);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 16px;
+}
+
+.toggle-input {
+    display: none;
+}
+
+.signup-box {
+    display: block;
+}
+
+.login-box {
+    display: none;
+}
+
+.toggle-input:checked ~ .signup-box {
+    display: none;
+}
+
+.toggle-input:checked ~ .login-box {
+    display: block;
 }
 
 .form-box {
     max-width: 300px;
-    background: #f1f7fe;
+    width: 100%;
+    background: #ffffff;
     overflow: hidden;
     border-radius: 16px;
-    color: #010101;
+    color: #65cbe5;
 }
 
 .form {
@@ -30,17 +54,13 @@ body {
 .title {
     font-weight: bold;
     font-size: 1.6rem;
-}
-
-.subtitle {
-    font-size: 1rem;
-    color: #666;
+    font-family: 'Poppins', sans-serif;
 }
 
 .form-container {
     overflow: hidden;
     border-radius: 8px;
-    background-color: #fff;
+    background-color: #ffffff;
     margin: 1rem 0 .5rem;
     width: 100%;
 }
@@ -54,6 +74,7 @@ body {
     border-bottom: 1px solid #eee;
     font-size: .9rem;
     padding: 8px 15px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .form-section {
@@ -61,17 +82,20 @@ body {
     font-size: .85rem;
     background-color: #e0ecfb;
     box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
-.form-section a {
+.switch-link {
     font-weight: bold;
     color: #0066ff;
+    cursor: pointer;
     transition: color .3s ease;
+    text-decoration: underline;
 }
 
-.form-section a:hover {
+.switch-link:hover {
     color: #005ce6;
-    text-decoration: underline;
 }
 
 .form button {
@@ -84,6 +108,7 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: background-color .3s ease;
+    font-family: 'Poppins', sans-serif;
 }
 
 .form button:hover {
@@ -91,7 +116,7 @@ body {
 }
 
 .back-wrap {
-    margin-top: 16px;
+    margin-top: 8px;
 }
 
 .back-button {
@@ -100,11 +125,12 @@ body {
     border-radius: 10em;
     font-size: 17px;
     font-weight: 600;
-    padding: 1em 2em;
+    padding: 0.8em 2em;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     border: 1px solid black;
     box-shadow: 0 0 0 0 black;
+    font-family: 'Poppins', sans-serif;
 }
 
 .back-button:hover {
